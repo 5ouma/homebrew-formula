@@ -1,7 +1,7 @@
 <br>
 
 <h1 align="center">Homebrew Formula</h1>
-<p align="center">This is a repository that includes ruby files of the Homebrew formula to tap.</p>
+<p align="center">Homebrew tap for Formulae to install cli tools unofficially</p>
 
 <br><br>
 
@@ -9,14 +9,14 @@
 
 1. ## Tap this repository
 
-    ```shell
-      brew tap 5ouma/formula
-    ```
+   ```shell
+     brew tap 5ouma/formula
+   ```
 
 2. ## Run these commands which you like
 
-    - #### [memo](https://github.com/5ouma/memo)
+   - #### [memo](https://github.com/5ouma/memo)
 
-        ```shell
-          brew install memo
-        ```
+     ```shell
+       brew install memo
+     ```
