@@ -1,6 +1,6 @@
 class Memo < Formula
-  version "0.1.0"
-  sha256 "eaa5463f92876f63987543111a53b64d7556c1c7b0f223f57df50df33a47cb87"
+  version "0.2.0"
+  sha256 "9130743e4b4e142161229a77ad14134e9d08dc68b4e9fab968babeb057473271"
 
   url "https://gitfront.io/r/Souma/t3rZXcDgwk5A/memo/raw/bin/memo"
   desc "This command tell you some useful commands."
