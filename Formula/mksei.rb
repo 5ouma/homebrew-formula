@@ -1,4 +1,4 @@
-class Eas < Formula
+class Mksei < Formula
   version "1.1"
   sha256 "e6398ce7b989dd0e70798b7285104032e1992dabd121ac280cf27d46687dae8f"
 
@@ -7,7 +7,8 @@ class Eas < Formula
   homepage "https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5"
   head "https://gist.github.com/bf4b0cb6de9ead726197db7ed3d937b5.git"
 
+  depends_on "php"
   def install
-    bin.install "macos_keyboard_shortcuts_exporter_importer.php" =>  "eas"
+    bin.install "macos_keyboard_shortcuts_exporter_importer.php" =>  "mksei"
   end
 end

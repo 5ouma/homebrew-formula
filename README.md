@@ -20,3 +20,9 @@
      ```shell
        brew install memo
      ```
+
+   - #### [mksei](https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5)
+
+     ```shell
+       brew install mksei
+     ```
