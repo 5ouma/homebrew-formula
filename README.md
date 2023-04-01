@@ -1,9 +1,9 @@
-<br>
+<br />
 
 <h1 align="center">Homebrew Formula</h1>
 <p align="center">Homebrew tap for Formulae to install cli tools unofficially</p>
 
-<br><br>
+<br /><br />
 
 # How to tap/install this?
 
