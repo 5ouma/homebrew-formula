@@ -10,15 +10,15 @@
 
 <br /><br />
 
-## How to tap/install this?
+## 📥 Installation
 
-1. ### Tap this repository
+1. ### 🚰 Tap this repo
 
    ```shell
      brew tap 5ouma/formula
    ```
 
-2. ### Run these commands which you like
+2. ### ⚙️ Run these commands which you like
 
    - #### [mksei](https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5)
 
