@@ -4,9 +4,10 @@ class Mksei < Formula
 
   url "https://gist.githubusercontent.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5/raw/a135140b52014273d59567f24983ded99e30ac2d/macos_keyboard_shortcuts_exporter_importer.php"
   version "1.1"
-  sha256 :no_check
+  sha256 "e6398ce7b989dd0e70798b7285104032e1992dabd121ac280cf27d46687dae8f"
   head "https://gist.github.com/bf4b0cb6de9ead726197db7ed3d937b5.git"
 
+  depends_on :macos
   depends_on "php"
   def install
     bin.install "macos_keyboard_shortcuts_exporter_importer.php" => "mksei"
