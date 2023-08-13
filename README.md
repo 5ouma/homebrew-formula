@@ -25,6 +25,12 @@
 
 2. ### ⚙️ Run these commands which you like
 
+   - #### [gh-dash](https://dlvhdr.github.io/gh-dash)
+
+     ```shell
+       brew install gh-dash
+     ```
+
    - #### [mksei](https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5)
 
      ```shell
