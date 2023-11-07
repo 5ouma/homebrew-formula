@@ -4,7 +4,7 @@
 
 # Homebrew Formula
 
-**🍺 Homebrew tap for Formulae to install cli tools unofficially**
+**🍺 Homebrew tap for Formulae to install cli tools unofficially.**
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/5ouma/homebrew-formula?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/5ouma/homebrew-formula?style=flat-square)
