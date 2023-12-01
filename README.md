@@ -1,8 +1,6 @@
-<br />
+<h1 align="center">Homebrew Formula</h1>
 
 <div align="center">
-
-# Homebrew Formula
 
 **🍺 Homebrew tap for Formulae to install cli tools unofficially.**
 
