@@ -33,13 +33,13 @@ jobs:
         run: brew install-bundler-gems
 
       - name: Cleanup Test Bot
-        run: brew test-bot --only-cleanup-before
+        run: brew test-bot --verbose --only-cleanup-before
 
       - name: Setup Test Bot
-        run: brew test-bot --only-setup
+        run: brew test-bot --verbose --only-setup
 
       - name: Tap Syntax Test Bot
-        run: brew test-bot --only-tap-syntax
+        run: brew test-bot --verbose --only-tap-syntax
 
       - name: Formula Test Bot
-        run: brew test-bot --only-formulae
+        run: brew test-bot --verbose --only-formulae
