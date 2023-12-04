@@ -2,6 +2,8 @@ class Ogpk < Formula
   desc "CLI tool to fetch OpenGraph data from a URL"
   homepage "https://github.com/almonk/ogpk"
   version "0.1.3"
+  license "MIT"
+
   depends_on "timg"
 
   on_macos do
