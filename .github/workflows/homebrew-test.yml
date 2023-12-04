@@ -43,3 +43,9 @@ jobs:
 
       - name: Formula Test Bot
         run: brew test-bot --verbose --only-formulae
+
+      - name: Install Formula
+        run: |
+          for formula in $(brew search "${GITHUB_REPOSITORY/homebrew-/}"); do
+            brew install --formula --verbose "$formula"
+          done
