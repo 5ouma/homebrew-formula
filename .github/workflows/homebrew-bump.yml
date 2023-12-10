@@ -16,7 +16,7 @@ jobs:
         with:
           test-bot: false
 
-      - name: Version up Homebrew Cask
+      - name: Version up Homebrew Formula
         uses: dawidd6/action-homebrew-bump-formula@v3
         with:
           token: ${{ secrets.TOKEN }}
