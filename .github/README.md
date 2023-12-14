@@ -10,7 +10,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/5ouma/homebrew-formula?style=flat-square)](https://github.com/5ouma/homebrew-formula/commits/main)
 <br />
 [![Test](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/homebrew-test.yml?label=test&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/homebrew-test.yml)
-[![Version Bump](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/homebrew-bump.yml?label=version_bump&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/homebrew-bump.yml)
+[![Version Bump](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/homebrew-bump.yml?label=version%20bump&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/homebrew-bump.yml)
 
 
 </div>
@@ -25,7 +25,7 @@
      brew tap 5ouma/formula
    ```
 
-2. ### ⚙️ Run these commands which you like
+2. ### 🧾 Install preferred tools
 
    - #### [gh-dash](https://dlvhdr.github.io/gh-dash)
 
