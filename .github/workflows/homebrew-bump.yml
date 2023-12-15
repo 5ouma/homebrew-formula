@@ -2,7 +2,7 @@ name: Homebrew Bump
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -15,6 +15,18 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
         with:
           test-bot: false
+
+      - name: Cache Homebrew Bundler RubyGems
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.setup-homebrew.outputs.gems-path }}
+          key: ${{ runner.os }}-rubygems-${{ steps.setup-homebrew.outputs.gems-hash }}
+          restore-keys: ${{ runner.os }}-rubygems-
+
+      - name: Install Homebrew Bundler RubyGems
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: brew install-bundler-gems
 
       - name: Version up Homebrew Formula
         uses: dawidd6/action-homebrew-bump-formula@v3
