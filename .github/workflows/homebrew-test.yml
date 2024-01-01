@@ -49,6 +49,7 @@ jobs:
         run: brew test-bot --verbose --only-tap-syntax
 
       - name: Formula Test Bot
+        if: ${{ github.event_name != 'schedule' }}
         run: brew test-bot --verbose --only-formulae
 
       - name: Install Formula
