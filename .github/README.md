@@ -12,7 +12,6 @@
 [![Test](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/homebrew-test.yml?label=test&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/homebrew-test.yml)
 [![Version Bump](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/homebrew-bump.yml?label=version%20bump&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/homebrew-bump.yml)
 
-
 </div>
 
 <br /><br />
@@ -22,25 +21,25 @@
 1. ### 🚰 Tap this repo
 
    ```shell
-     brew tap 5ouma/formula
+   brew tap 5ouma/formula
    ```
 
-2. ### 🧾 Install preferred tools
+1. ### 🧾 Install preferred tools
 
-   - #### [gh-dash](https://dlvhdr.github.io/gh-dash)
+   - #### [🚀 gh-dash](https://dlvhdr.github.io/gh-dash)
 
      ```shell
-       brew install gh-dash
+     brew install gh-dash
      ```
 
-   - #### [mksei](https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5)
+   - #### [⌨️ mksei](https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5)
 
      ```shell
-       brew install mksei
+     brew install mksei
      ```
 
-   - #### [ogpk](https://github.com/almonk/ogpk)
+   - #### [🖼️ ogpk](https://github.com/almonk/ogpk)
 
      ```shell
-       brew install ogpk
+     brew install ogpk
      ```
