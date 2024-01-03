@@ -1,4 +1,4 @@
-name: Homebrew Test
+name: 🧪 Homebrew Test
 
 on:
   push:
@@ -18,11 +18,11 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Setup Homebrew
+      - name: 🍺 Setup Homebrew
         id: setup-homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      - name: Cache Homebrew Bundler RubyGems
+      - name: 🫙 Cache Homebrew Bundler RubyGems
         id: cache
         uses: actions/cache@v3
         with:
@@ -30,29 +30,29 @@ jobs:
           key: ${{ runner.os }}-rubygems-${{ steps.setup-homebrew.outputs.gems-hash }}
           restore-keys: ${{ runner.os }}-rubygems-
 
-      - name: Install Homebrew Bundler RubyGems
+      - name: 💎 Install Homebrew Bundler RubyGems
         if: steps.cache.outputs.cache-hit != 'true'
         run: brew install-bundler-gems
 
-      - name: Tap and Switch Branch
+      - name: 🚰 Tap and Switch Branch
         run: |
           brew tap "$GITHUB_REPOSITORY"
           git -C "$(brew tap-info "$GITHUB_REPOSITORY" --json | jq -r '.[].path')" switch "${GITHUB_HEAD_REF:-main}"
 
-      - name: Cleanup Test Bot
+      - name: 🧹 Cleanup Test Bot
         run: brew test-bot --verbose --only-cleanup-before
 
-      - name: Setup Test Bot
+      - name: 🔧 Setup Test Bot
         run: brew test-bot --verbose --only-setup
 
-      - name: Tap Syntax Test Bot
+      - name: 📺 Tap Syntax Test Bot
         run: brew test-bot --verbose --only-tap-syntax
 
-      - name: Formula Test Bot
+      - name: 🧾 Formula Test Bot
         if: ${{ github.event_name != 'schedule' }}
         run: brew test-bot --verbose --only-formulae
 
-      - name: Install Formula
+      - name: 📲 Install Formula
         run: |
           for formula in $(brew search "${GITHUB_REPOSITORY/homebrew-/}"); do
             brew install --formula --verbose "$formula"
