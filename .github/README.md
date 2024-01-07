@@ -37,9 +37,3 @@
      ```shell
      brew install mksei
      ```
-
-   - #### [🖼️ ogpk](https://github.com/almonk/ogpk)
-
-     ```shell
-     brew install ogpk
-     ```
