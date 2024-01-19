@@ -37,3 +37,9 @@
      ```shell
      brew install mksei
      ```
+
+   - #### [📑 mli](https://github.com/5ouma/mli)
+
+     ```shell
+     brew install mli
+     ```
