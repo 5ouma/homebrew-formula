@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  contents: write
   pull-requests: write
 
 jobs:
@@ -28,12 +29,25 @@ jobs:
           restore-keys: ${{ runner.os }}-rubygems-
 
       - name: 💎 Install Homebrew Bundler RubyGems
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
         run: brew install-bundler-gems
+
+      - name: 📛 Get Repository Name
+        id: repository
+        run: echo "name=${GITHUB_REPOSITORY#"$GITHUB_REPOSITORY_OWNER"/}" | tee -a "$GITHUB_OUTPUT"
+
+      - name: 💳 Create GitHub App Token
+        uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ steps.repository.outputs.name }}
 
       - name: ✨ Version up Homebrew Formula
         uses: dawidd6/action-homebrew-bump-formula@v3
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
           tap: ${{ github.repository }}
           livecheck: true
