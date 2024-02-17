@@ -30,7 +30,7 @@ class GhDash < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v3.13.2/linux-arm64"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v3.13.1/linux-arm64"
       sha256 "3f651737c3e85c3983ea30729a245246ada9729fa7aa1820623d184ed2bbd6dc"
       def install
         bin.install "linux-arm64" => name.to_s
