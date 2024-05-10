@@ -5,13 +5,13 @@
 class Mli < Formula
   desc "Manage macOS Login Items"
   homepage "https://github.com/5ouma/mli"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/5ouma/mli/releases/download/v0.4.0/mli_Darwin_x86_64.tar.gz"
-    sha256 "76d770887ec72c58ee21f9b077ae8d3614720cf2f62e1c670592b6d0d84519f8"
+    url "https://github.com/5ouma/mli/releases/download/v0.4.1/mli_Darwin_x86_64.tar.gz"
+    sha256 "716834ed29bbf9c8913c7839e9444ef749f7024d19dd0bc2eac7b2eac1aca59b"
 
     def install
       bin.install "mli"
@@ -19,8 +19,8 @@ class Mli < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/5ouma/mli/releases/download/v0.4.0/mli_Darwin_arm64.tar.gz"
-    sha256 "636c6fc9247ed6c3698d262b12bcad2a28b58b77f9a8b2e00e3442913d9bbdac"
+    url "https://github.com/5ouma/mli/releases/download/v0.4.1/mli_Darwin_arm64.tar.gz"
+    sha256 "063ed2e73eda9eaf9005dfe51d4560023bd0c081a22fc68d8cdbd42ea92b7fa7"
 
     def install
       bin.install "mli"
