@@ -21,7 +21,7 @@ jobs:
 
       - name: 🫙 Cache Homebrew Bundler RubyGems
         id: cache
-        uses: actions/cache@v4
+        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
         with:
           path: ${{ steps.setup-homebrew.outputs.gems-path }}
           key: ${{ runner.os }}-rubygems-${{ steps.setup-homebrew.outputs.gems-hash }}
@@ -32,7 +32,7 @@ jobs:
         run: brew install-bundler-gems
 
       - name: ✨ Version up Homebrew Formula
-        uses: dawidd6/action-homebrew-bump-formula@v3
+        uses: dawidd6/action-homebrew-bump-formula@baf2b60c51fc1f8453c884b0c61052668a71bd1d # v3.11.0
         with:
           token: ${{ secrets.TOKEN }}
           tap: ${{ github.repository }}
