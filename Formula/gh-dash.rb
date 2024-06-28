@@ -1,7 +1,7 @@
 class GhDash < Formula
   desc "Beautiful CLI dashboard for GitHub"
   homepage "https://dlvhdr.github.io/gh-dash"
-  version "4.2.0"
+  version "4.3.0"
   license "MIT"
 
   on_macos do
@@ -23,8 +23,8 @@ class GhDash < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.2.0/gh-dash_v4.2.0_linux-amd64"
-      sha256 "3221aad2b9d0b853ee2f8a52d83ec9114c7e53d5f4e331d2deaf41106fdb7730"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.3.0/gh-dash_v4.3.0_linux-amd64"
+      sha256 "aa8e7858d19abe36d99ef5cd66990169d64355820c50f7328b0f4c23a947e9bf"
       def install
         bin.install "gh-dash_v#{version}_linux-amd64" => name.to_s
       end
