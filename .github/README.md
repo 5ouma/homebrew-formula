@@ -20,7 +20,7 @@
 
 1. ### 🚰 Tap this repo
 
-   ```shell
+   ```sh
    brew tap 5ouma/formula
    ```
 
@@ -28,18 +28,18 @@
 
    - #### [🚀 gh-dash](https://dlvhdr.github.io/gh-dash)
 
-     ```shell
+     ```sh
      brew install gh-dash
      ```
 
    - #### [⌨️ mksei](https://gist.github.com/miclf/bf4b0cb6de9ead726197db7ed3d937b5)
 
-     ```shell
+     ```sh
      brew install mksei
      ```
 
    - #### [📑 mli](https://github.com/5ouma/mli)
 
-     ```shell
+     ```sh
      brew install mli
      ```
