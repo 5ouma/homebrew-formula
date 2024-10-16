@@ -32,7 +32,7 @@ jobs:
         run: brew install-bundler-gems
 
       - name: ✨ Version up Homebrew Formula
-        uses: dawidd6/action-homebrew-bump-formula@baf2b60c51fc1f8453c884b0c61052668a71bd1d # v3.11.0
+        uses: dawidd6/action-homebrew-bump-formula@8d494330bce4434918392df134ad3db1167904db # v4
         with:
           token: ${{ secrets.TOKEN }}
           tap: ${{ github.repository }}
