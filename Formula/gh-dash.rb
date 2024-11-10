@@ -1,20 +1,20 @@
 class GhDash < Formula
   desc "Beautiful CLI dashboard for GitHub"
   homepage "https://dlvhdr.github.io/gh-dash"
-  version "4.7.0"
+  version "4.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.0/gh-dash_v4.7.0_darwin-amd64"
-      sha256 "6bcbff6f2726419e1e69061fea7f68c7896f76e9bf4262dfdb67063725f96ec7"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.2/gh-dash_v4.7.2_darwin-amd64"
+      sha256 "8fc15231f0ed1400c1867feda4cbf51df4a652130f8a2ae04b82312631a68875"
       def install
         bin.install "gh-dash_v#{version}_darwin-amd64" => name.to_s
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.0/gh-dash_v4.7.0_darwin-arm64"
-      sha256 "fb769cc2883ed3f88940bc1e1d01e8428436d522cb9b044359aa6c7161fbe31b"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.2/gh-dash_v4.7.2_darwin-arm64"
+      sha256 "1f91d7c54c3f831e579148520afc93fb55bb67f24219862f23daa7ff6df970e9"
       def install
         bin.install "gh-dash_v#{version}_darwin-arm64" => name.to_s
       end
@@ -23,15 +23,15 @@ class GhDash < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.0/gh-dash_v4.7.0_linux-amd64"
-      sha256 "8f93e9612bf180c9e64a0e15a178ccb7cd2b5443af4bb4fa1ca28bf71b6e5c71"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.2/gh-dash_v4.7.2_linux-amd64"
+      sha256 "4f2158f05af3254605eac4989a20e622961ee6003f324c7f3df7d2bb0b11faf3"
       def install
         bin.install "gh-dash_v#{version}_linux-amd64" => name.to_s
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.0/gh-dash_v4.7.0_linux-arm64"
-      sha256 "ae0c9a0724f140a83fd2c898fda5ea88be2d76320c5d9d40341691ffa15df59b"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.2/gh-dash_v4.7.2_linux-arm64"
+      sha256 "2144efb30d1bc899ade0ab270b9c3ca89641483752422f281bce26eb73a52c1a"
       def install
         bin.install "gh-dash_v#{version}_linux-arm64" => name.to_s
       end
