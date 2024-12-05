@@ -3,7 +3,6 @@ class GhDash < Formula
   homepage "https://dlvhdr.github.io/gh-dash"
   version "4.7.3"
   license "MIT"
-
   depends_on "gh"
 
   on_macos do
