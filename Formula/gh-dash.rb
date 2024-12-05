@@ -4,6 +4,8 @@ class GhDash < Formula
   version "4.7.3"
   license "MIT"
 
+  depends_on "gh"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dlvhdr/gh-dash/releases/download/v4.7.3/gh-dash_v4.7.3_darwin-amd64"
