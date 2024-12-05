@@ -17,6 +17,8 @@ jobs:
       matrix:
         os: [Ubuntu-Latest, macOS-13, macOS-14]
     runs-on: ${{ matrix.os }}
+    env:
+      repository: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name || github.repository }}
 
     steps:
       - name: 🍺 Setup Homebrew
@@ -37,8 +39,8 @@ jobs:
 
       - name: 🚰 Tap and Switch Branch
         run: |
-          brew tap "$GITHUB_REPOSITORY"
-          git -C "$(brew tap-info "$GITHUB_REPOSITORY" --json | jq -r '.[].path')" switch "${GITHUB_HEAD_REF:-main}"
+          brew tap "$repository"
+          git -C "$(brew tap-info "$repository" --json | jq -r '.[].path')" switch "${GITHUB_HEAD_REF:-main}"
 
       - name: 🧹 Cleanup Test Bot
         run: brew test-bot --verbose --only-cleanup-before
@@ -55,6 +57,6 @@ jobs:
 
       - name: 📲 Install Formula
         run: |
-          for formula in $(brew search "${GITHUB_REPOSITORY/homebrew-/}"); do
+          for formula in $(brew search "${repository/homebrew-/}"); do
             brew install --formula --verbose "$formula"
           done
