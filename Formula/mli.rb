@@ -10,8 +10,8 @@ class Mli < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/5ouma/mli/releases/download/v0.4.1/mli_Darwin_x86_64.tar.gz"
-    sha256 "716834ed29bbf9c8913c7839e9444ef749f7024d19dd0bc2eac7b2eac1aca59b"
+    url "https://github.com/5ouma/mli/archive/refs/tags/v0.4.2.tar.gz"
+    sha256 "a66d5079b7fc888ef7504bc0ee46c81db5b6f7e557b4a822a39ead2bd2b75dc2"
 
     def install
       bin.install "mli"
