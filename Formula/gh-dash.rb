@@ -7,15 +7,15 @@ class GhDash < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.8.0/gh-dash_v4.8.0_darwin-amd64"
-      sha256 "8d754ea245e11a6dd26ee8b73c9618c11aff9dacf56bdd5b1235e6420d8edd31"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.8.1/gh-dash_v4.8.1_darwin-amd64"
+      sha256 "48a38459cb1e86f6d1860e3a695e464dbef3d1c93025e4b64f466445da67c1fd"
       def install
         bin.install "gh-dash_v#{version}_darwin-amd64" => name.to_s
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.8.0/gh-dash_v4.8.0_darwin-arm64"
-      sha256 "031f88922d7d36030700f2cf9e32e8b79c47974c3ce0972551659e8bdff786cf"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.8.1/gh-dash_v4.8.1_darwin-arm64"
+      sha256 "1abcad05f8f2cd1dc39a2f608d3130165abaac81b2d4c76c60300d6235423226"
       def install
         bin.install "gh-dash_v#{version}_darwin-arm64" => name.to_s
       end
@@ -31,8 +31,8 @@ class GhDash < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.8.0/gh-dash_v4.8.0_linux-arm64"
-      sha256 "cdf65dae9bb2cf5c534707504d40936839a4bf72cd077ab00a6f5dbc6144ed0f"
+      url "https://github.com/dlvhdr/gh-dash/releases/download/v4.8.1/gh-dash_v4.8.1_linux-arm64"
+      sha256 "feb027bc54a8843a0b583708d591ba46148b45076d79bdc43336844f0412b1fe"
       def install
         bin.install "gh-dash_v#{version}_linux-arm64" => name.to_s
       end
