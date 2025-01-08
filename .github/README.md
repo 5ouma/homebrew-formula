@@ -4,13 +4,12 @@
 
 **🍺 Homebrew tap for Formulae to install CLI tools unofficially**
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/5ouma/homebrew-formula?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/5ouma/homebrew-formula?style=flat-square)
-[![GitHub last commit](https://img.shields.io/github/last-commit/5ouma/homebrew-formula?style=flat-square)](https://github.com/5ouma/homebrew-formula/commit/HEAD)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/5ouma/homebrew-formula?style=flat-square)](https://github.com/5ouma/homebrew-formula/commits/main)
 <br />
-[![Test](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/test.yml?label=test&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/test.yml)
-[![Bump](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/bump.yml?label=bump&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/bump.yml)
+
+[![Test](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/test.yml?label=Test&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/test.yml)
+[![Bump](https://img.shields.io/github/actions/workflow/status/5ouma/homebrew-formula/bump.yml?label=Bump&style=flat-square)](https://github.com/5ouma/homebrew-formula/actions/workflows/bump.yml)
+
+![Repobeats Analytics Image](https://repobeats.axiom.co/api/embed/570c676b85ff6655111fe675ee103d08a2f66f06.svg)
 
 </div>
 
