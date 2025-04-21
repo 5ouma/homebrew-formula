@@ -9,9 +9,10 @@ permissions: {}
 
 jobs:
   Bump-Formula:
-    runs-on: Ubuntu-Latest
     permissions:
       pull-requests: write
+    runs-on: Ubuntu-Latest
+    timeout-minutes: 3
 
     steps:
       - name: 🍺 Setup Homebrew
